@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Css/Styles.Css">
+    <script src="https://kit.fontawesome.com/37b6b13bc4.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Css/Imagenes/favicon.ico" type="image/x-icon">
+    <title>Merlin Construcciones</title>
+</head>
+
+<body>
+    <header id="header">
+        <nav><h3>Merlin Construcciones</h3><img class="logo" src="/Css/Imagenes/merlinlogo.png" alt=""><ul><li><a href="#home">Home</a></li><li><a href="#servicios"> Servicios</a></li><li><a href="#contacto"> Contacto</a></li></ul></nav>
+        <img class="header-img" src="/Css/Imagenes/building-material.png" alt="" id="header-img">
+        <section class="home" id="home">
+            <h1>Servicios de Diseño y Construcción</h1>
+            <h3>Llegamos para ayudarte a idear, planificar y concretar tus sueños</h3>
+        </section>
+    </header>
+    <main>
+        <section id="servicios" class="servicios">
+            <h1>Trabajá con nosotros</h1>
+
+            <div class="card">
+                <img src="/Css/Imagenes/Planos.webp" alt="Imagenes de planos de arquitecto">
+                <h4>
+                    <ul>
+                        <li>Diseños</li>
+                        <li>Modelados 3D</li>
+                        </ul>
+                </h4>
+                <button>Consultar</button>
+            </div>
+            <div class="card">
+                <img src="/Css/Imagenes/CalculadoraPapek.jpg" alt="Imagenes de calculadoras y presupuestos impresos">
+                <h4>
+                    <ul>
+                        <li>Computos</li>
+                        <li>Presupuestos</li>
+                        <li>Relevamientos</li>
+                    </ul>
+                </h4>
+                <button>Consultar</button>
+            </div>
+            <div class="card">
+                <img src="/Css/Imagenes/obreroCemento.jpeg" alt="Imagenes de obreros trabajando">
+                <h4>
+                    <ul>
+                        <li>Reparación y remodelación</li>
+                        <li>Colocación de terminaciones</li>
+                        <li>Instalaciones de agua, gas, cloacas y electricidad</li></ul>
+                    </h4>
+                    <button>Consultar</button>
+                </div>
+
+        </section>
+        <section class="contacto" id="contacto">
+            <h2>Contactanos en:</h2>
+            <div class="redes">
+                <a target="_blank" href="https://www.instagram.com/merlinconstrucciones/"><i class="fab fa-instagram fa-2x"></i><div class="hide-element">Link a instagram</div></a>
+                <a href="https://wa.link/zsppns"><i class="fab fa-whatsapp fa-2x"></i><div class="hide-element">Link a Whatsapp</div></a>
+            </div>
+            <form action="post">
+                <div class="form-input">
+                    <label for="name">Nombre:</label>
+                <input id="name" required type="text" aria-label="Name Input" placeholder="Completa con tu Nombre"></div>
+                <div class="form-input">
+                    <label for="telefono">Teléfono:</label>
+                <input id="telefono" required aria-label="Phone number input" type="number" placeholder="Completa con tu Teléfono"></div>
+                <div class="form-input">
+                    <label for="select">Tipo de consulta</label>
+                    <select name="select" id="select">
+                        <option value="diseño">Diseño / Modelado 3D</option>
+                        <option value="presupuesto">Computos / Presupuestos / Relevamientos</option>
+                        <option value="reparacion">Reparaciones / Colocaciones / Instalaciones / Remodelaciones</option>
+                    </select>
+                </div>
+                <div class="form-input">
+                    <label for="email">Email:</label>
+                <input id="email" required aria-label="email input" type="email" placeholder="Completa con tu Email"></div>
+                <label for="Comentario">Hablanos de tu proyecto:</label>
+                <textarea name="Comentario" id="comentario" cols="30" rows="10"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+    </main>
+    <!--Footer-->
+            <footer><div>Diseño y marcado por <a style="color: black;" href="mailto:martine.@gmail.com">Martin Grillo</a> &copy; all rights reserved</div>
+                <div class="icons"></div>
+                </footer>
+</body>
+
+</html>
