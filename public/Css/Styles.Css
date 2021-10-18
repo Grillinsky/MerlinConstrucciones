@@ -97,10 +97,11 @@ a:hover{
     0px 0px 36px rgba(250, 245, 255, .1);
 }
 li{
+    padding:  .15rem 0rem;
     list-style: none;
 }
 .logo{
-    height: 90%;
+    height: 80%;
     filter: opacity(.75);
 }
 button{
@@ -218,4 +219,24 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
+}
+footer{
+    min-height: 10vh;
+    color:white;
+    padding: 3% 0%;
+    display: flex;
+        background: linear-gradient(125deg, hsla(197, 100%,43%, 0.9) 70%, hsla(197, 96%,74%, 0.9) 95%);
+}
+footer section{
+    width: 50%;
+}
+footer .icons{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.footer-emprendimiento,
+.footer-desarrollador{
+    text-align: center;
 }
