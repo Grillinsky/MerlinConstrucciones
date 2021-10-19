@@ -11,7 +11,7 @@
 
 <body>
     <header id="header">
-        <nav><h3>Merlin Construcciones</h3><img class="logo" src="/Css/Imagenes/merlinlogo.png" alt=""><ul><li><a href="#home">Home</a></li><li><a href="#servicios"> Servicios</a></li><li><a href="#contacto"> Contacto</a></li></ul></nav>
+        <nav id="nav-bar"><h3>Merlin Construcciones</h3><img class="logo" src="/Css/Imagenes/merlinlogo.png" alt=""><ul><li><a class="nav-link" href="#home">Home</a></li><li><a class="nav-link" href="#servicios"> Servicios</a></li><li><a class="nav-link" href="#contacto"> Contacto</a></li></ul></nav>
         <img class="header-img" src="/Css/Imagenes/building-material.png" alt="Imagen de fondo de trabajadores del concreto" id="header-img">
         <section class="home" id="home">
             <h1>Servicios de <br> Diseño y Construcción</h1>
@@ -28,7 +28,7 @@
                     <ul>
                         <li>Diseños</li>
                         <li>Modelados 3D</li>
-                        </ul>
+                    </ul>
                 </h4>
                 <button>Consultar</button>
             </div>
@@ -61,7 +61,7 @@
                 <a target="_blank" href="https://www.instagram.com/merlinconstrucciones/"><i class="fab fa-instagram fa-3x"></i><div class="hide-element">Link a instagram</div></a>
                 <a target="_blank" href="https://wa.link/sksgt7"><i class="fab fa-whatsapp fa-3x"></i><div class="hide-element">Link a Whatsapp</div></a>
             </div>
-            <form action="post">
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
                 <div class="form-input">
                     <label for="name">Nombre:</label>
                 <input id="name" required type="text" aria-label="Name Input" placeholder="Completa con tu Nombre"></div>
@@ -81,7 +81,8 @@
                 <input id="email" required aria-label="email input" type="email" placeholder="Completa con tu Email"></div>
                 <label for="Comentario">Hablanos de tu proyecto:</label>
                 <textarea name="Comentario" id="comentario" cols="30" rows="10"></textarea>
-                <button type="submit">Enviar</button>
+                <input id="submit" class="button" type="submit" value="Enviar" aria-label="Enviar" >
+                <!-- <button type="submit">Enviar</button> -->
             </form>
         </section>
 
@@ -92,8 +93,10 @@
                     <div>Diseño y marcado por <a style="color: black;" href="mailto:martine.@gmail.com">Martin Grillo</a>
                     </div>
                     <div class="icons">
-                        <i class="fab fa-github fa-2x"></i>
-                        <i class="fab fa-linkedin fa-2x"></i>
+                        <a target="_blank" href="https://github.com/Grillinsky"><div class="hide-element">Link a GitHub</div>
+                        <i class="fab fa-github fa-2x"></i></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/martin-grillo-a78927201/"><div class="hide-element">Link a LinkedIn</div>
+                        <i class="fab fa-linkedin fa-2x"></i></a>
                     </div>
                 </section>
                 <section class="footer-emprendimiento">
