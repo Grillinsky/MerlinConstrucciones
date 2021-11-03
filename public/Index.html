@@ -30,7 +30,7 @@
                         <li>Modelados 3D</li>
                     </ul>
                 </h4>
-                <button>Consultar</button>
+                <button id="diseñoBtn">Consultar</button>
             </div>
             <div class="card">
                 <img src="/Css/Imagenes/CalculadoraPapek.jpg" alt="Imagenes de calculadoras y presupuestos impresos">
@@ -41,7 +41,7 @@
                         <li>Relevamientos</li>
                     </ul>
                 </h4>
-                <button>Consultar</button>
+                <button id="presupuestoBtn">Consultar</button>
             </div>
             <div class="card">
                 <img src="/Css/Imagenes/obreroCemento.jpeg" alt="Imagenes de obreros trabajando">
@@ -51,15 +51,15 @@
                         <li>Colocación de terminaciones</li>
                         <li>Instalaciones de agua, gas, cloacas y electricidad</li></ul>
                     </h4>
-                    <button>Consultar</button>
+                    <button id="reparacionBtn">Consultar</button>
                 </div>
 
         </section>
         <section class="contacto" id="contacto">
             <h2>Contactanos en:</h2>
             <div class="redes">
-                <a target="_blank" href="https://www.instagram.com/merlinconstrucciones/"><i class="fab fa-instagram fa-3x"></i><div class="hide-element">Link a instagram</div></a>
-                <a target="_blank" href="https://wa.link/sksgt7"><i class="fab fa-whatsapp fa-3x"></i><div class="hide-element">Link a Whatsapp</div></a>
+                <a id="emprendimientoInstaLink" target="_blank" href="https://www.instagram.com/merlinconstrucciones/"><i class="fab fa-instagram fa-3x"></i><div class="hide-element">Link a instagram</div></a>
+                <a id="emprendimientoWhatsappLink" target="_blank" href="https://wa.link/sksgt7"><i class="fab fa-whatsapp fa-3x"></i><div class="hide-element">Link a Whatsapp</div></a>
             </div>
             <form id="form" action="submit">
                 <div class="form-input">
@@ -143,8 +143,15 @@
                     const analytics = getAnalytics(app);
                     const database = getDatabase(app);
 
+
+                    let diseñoSelect = document.getElementById("diseñoBtn");
+                    let presupuestoSelect = document.getElementById("presupuestoBtn");                   
+                    let reparacionSelect = document.getElementById("reparacionBtn");
                     let form = document.getElementById("form");
                     let submit = document.getElementById("submit");
+                    presupuestoSelect.addEventListener("click", selectPresupuesto);
+                    reparacionSelect.addEventListener("click", selectReparacion);
+                    diseñoSelect.addEventListener("click", selectDiseño);
                     submit.addEventListener("click", (e)=>{
                         e.preventDefault(e);
                         // Get VAlues
@@ -176,6 +183,18 @@
                         form.reset();
                     }});
                 
+                    function selectDiseño(){
+                        document.querySelector("#select").value= "diseño";
+                        form.scrollIntoView();
+                    }
+                    function selectPresupuesto(){
+                        document.querySelector("#select").value= "presupuesto";
+                        form.scrollIntoView();
+                    }
+                    function selectReparacion(){
+                        document.querySelector("#select").value= "reparacion";
+                        form.scrollIntoView();
+                    }
                   </script>
 </body>
 
