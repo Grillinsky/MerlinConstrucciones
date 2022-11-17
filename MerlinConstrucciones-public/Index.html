@@ -1,120 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="Css/Styles.Css">
-    <script src="https://kit.fontawesome.com/37b6b13bc4.js" crossorigin="anonymous"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="/Css/Imagenes/favicon.ico" type="image/x-icon">
+  <head>
+    <link rel="stylesheet" href="Css/Styles.Css" />
+    <script
+      src="https://kit.fontawesome.com/37b6b13bc4.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="/Css/Imagenes/favicon.ico"
+      type="image/x-icon"
+    />
     <title>Merlin Construcciones</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header id="header">
-        <nav id="nav-bar"><a class="nav-title" href="#home"><h3 >Merlin Construcciones</h3></a><img class="logo" src="/Css/Imagenes/merlinlogo.png" alt="Logo de la empresa"><ul><li><a class="nav-link" href="#home">Home</a></li><li><a class="nav-link" href="#servicios"> Servicios</a></li><li><a class="nav-link" href="#contacto"> Contacto</a></li></ul></nav>
-        <img class="header-img" src="/Css/Imagenes/building-material.png" alt="Imagen de fondo de trabajadores del concreto" id="header-img">
-        <section class="home" id="home">
-            <h1>Servicios de <br> Diseño y Construcción</h1>
-            <h3>Llegamos a El Calafate para ayudarte a idear, planificar y concretar tus sueños</h3>
-        </section>
+      <nav id="nav-bar">
+        <a class="nav-title" href="#home"><h3>Merlin Construcciones</h3></a
+        ><img
+          class="logo"
+          src="/Css/Imagenes/merlinlogo.png"
+          alt="Logo de la empresa"
+        />
+        <ul>
+          <li><a class="nav-link" href="#home">Home</a></li>
+          <li><a class="nav-link" href="#servicios"> Servicios</a></li>
+          <li><a class="nav-link" href="#contacto"> Contacto</a></li>
+        </ul>
+      </nav>
+      <img
+        class="header-img"
+        src="/Css/Imagenes/building-material.png"
+        alt="Imagen de fondo de trabajadores del concreto"
+        id="header-img"
+      />
+      <section class="home" id="home">
+        <h1>
+          Servicios de <br />
+          Diseño y Construcción
+        </h1>
+        <h3>
+          Llegamos a El Calafate para ayudarte a idear, planificar y concretar
+          tus sueños
+        </h3>
+      </section>
     </header>
     <main>
-        <section id="servicios" class="servicios">
-            <h1>Trabajá con nosotros</h1>
+      <section id="servicios" class="servicios">
+        <h1>Trabajá con nosotros</h1>
 
-            <div class="card">
-                <img src="/Css/Imagenes/Planos.webp" alt="Imagenes de planos de arquitecto">
-                <h4>
-                    <ul>
-                        <li>Diseños</li>
-                        <li>Modelados 3D</li>
-                    </ul>
-                </h4>
-                <button id="diseñoBtn">Consultar</button>
-            </div>
-            <div class="card">
-                <img src="/Css/Imagenes/CalculadoraPapek.jpg" alt="Imagenes de calculadoras y presupuestos impresos">
-                <h4>
-                    <ul>
-                        <li>Computos</li>
-                        <li>Presupuestos</li>
-                        <li>Relevamientos</li>
-                    </ul>
-                </h4>
-                <button id="presupuestoBtn">Consultar</button>
-            </div>
-            <div class="card">
-                <img src="/Css/Imagenes/obreroCemento.jpeg" alt="Imagenes de obreros trabajando">
-                <h4>
-                    <ul>
-                        <li>Reparación y remodelación</li>
-                        <li>Colocación de terminaciones</li>
-                        <li>Instalaciones de agua, gas, cloacas y electricidad</li></ul>
-                    </h4>
-                    <button id="reparacionBtn">Consultar</button>
-                </div>
-
-        </section>
-        <section class="contacto" id="contacto">
-            <h2>Contactanos en:</h2>
-            <div class="redes">
-                <a id="emprendimientoInstaLink" target="_blank" href="https://www.instagram.com/merlinconstrucciones/"><i class="fab fa-instagram fa-3x"></i><div class="hide-element">Link a instagram</div></a>
-                <a id="emprendimientoWhatsappLink" target="_blank" href="https://wa.link/sksgt7"><i class="fab fa-whatsapp fa-3x"></i><div class="hide-element">Link a Whatsapp</div></a>
-            </div>
-            <form name="contacto" id="form" action="submit" method="POST" netlify>
-                <p class="form-input">
-                    <label for="name">Nombre:</label>
-                <input id="name" name="name" required type="text" aria-label="Name Input" placeholder="Completa con tu Nombre"></p>
-                <div class="form-input">
-                    <label for="telefono">Teléfono:</label>
-                <input name="phone" id="phone" required aria-label="Phone number input" type="number" placeholder="Completa con tu Teléfono"></div>
-                <div class="form-input">
-                    <label for="select">Tipo de consulta</label>
-                    <select name="select" id="select">
-                        <option value="#">Elegi una opcion</option>
-                        <option value="diseño">Diseño / Modelado 3D</option>
-                        <option value="presupuesto">Computos / Presupuestos / Relevamientos</option>
-                        <option value="reparacion">Reparaciones / Colocaciones / Instalaciones / Remodelaciones</option>
-                    </select>
-                </div>
-                <div class="form-input">
-                    <label for="email">Email:</label>
-                <input name="email" id="email" required aria-label="email input" type="email" placeholder="Completa con tu Email"></div>
-                <label for="Comentario">Hablanos de tu proyecto:</label>
-                <textarea name="Comentario" id="message" cols="30" rows="10"></textarea>
-                <!-- <input id="submit" class="button" type="submit" value="Enviar" aria-label="Enviar" > -->
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
-
+        <div class="card">
+          <img
+            src="/Css/Imagenes/Planos.webp"
+            alt="Imagenes de planos de arquitecto"
+          />
+          <h4>
+            <ul>
+              <li>Diseños</li>
+              <li>Modelados 3D</li>
+            </ul>
+          </h4>
+          <button id="diseñoBtn">Consultar</button>
+        </div>
+        <div class="card">
+          <img
+            src="/Css/Imagenes/CalculadoraPapek.jpg"
+            alt="Imagenes de calculadoras y presupuestos impresos"
+          />
+          <h4>
+            <ul>
+              <li>Computos</li>
+              <li>Presupuestos</li>
+              <li>Relevamientos</li>
+            </ul>
+          </h4>
+          <button id="presupuestoBtn">Consultar</button>
+        </div>
+        <div class="card">
+          <img
+            src="/Css/Imagenes/obreroCemento.jpeg"
+            alt="Imagenes de obreros trabajando"
+          />
+          <h4>
+            <ul>
+              <li>Reparación y remodelación</li>
+              <li>Colocación de terminaciones</li>
+              <li>Instalaciones de agua, gas, cloacas y electricidad</li>
+            </ul>
+          </h4>
+          <button id="reparacionBtn">Consultar</button>
+        </div>
+      </section>
+      <section class="contacto" id="contacto">
+        <h2>Contactanos en:</h2>
+        <div class="redes">
+          <a
+            id="emprendimientoInstaLink"
+            target="_blank"
+            href="https://www.instagram.com/merlinconstrucciones/"
+            ><i class="fab fa-instagram fa-3x"></i>
+            <div class="hide-element">Link a instagram</div></a
+          >
+          <a
+            id="emprendimientoWhatsappLink"
+            target="_blank"
+            href="https://wa.link/sksgt7"
+            ><i class="fab fa-whatsapp fa-3x"></i>
+            <div class="hide-element">Link a Whatsapp</div></a
+          >
+        </div>
+        <form name="contacto" id="form" action="submit" method="POST" netlify>
+          <p class="form-input">
+            <label for="name">Nombre:</label>
+            <input
+              id="name"
+              name="name"
+              required
+              type="text"
+              aria-label="Name Input"
+              placeholder="Completa con tu Nombre"
+            />
+          </p>
+          <div class="form-input">
+            <label for="telefono">Teléfono:</label>
+            <input
+              name="phone"
+              id="phone"
+              required
+              aria-label="Phone number input"
+              type="number"
+              placeholder="Completa con tu Teléfono"
+            />
+          </div>
+          <div class="form-input">
+            <label for="select">Tipo de consulta</label>
+            <select name="select" id="select">
+              <option value="#">Elegi una opcion</option>
+              <option value="diseño">Diseño / Modelado 3D</option>
+              <option value="presupuesto">
+                Computos / Presupuestos / Relevamientos
+              </option>
+              <option value="reparacion">
+                Reparaciones / Colocaciones / Instalaciones / Remodelaciones
+              </option>
+            </select>
+          </div>
+          <div class="form-input">
+            <label for="email">Email:</label>
+            <input
+              name="email"
+              id="email"
+              required
+              aria-label="email input"
+              type="email"
+              placeholder="Completa con tu Email"
+            />
+          </div>
+          <label for="Comentario">Hablanos de tu proyecto:</label>
+          <textarea
+            name="Comentario"
+            id="message"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <!-- <input id="submit" class="button" type="submit" value="Enviar" aria-label="Enviar" > -->
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
     </main>
     <!--Footer-->
-            <footer>
-                <section class="footer-desarrollador">
-                    <div>Diseño y marcado por <a style="color: black;" href="mailto:martine.@gmail.com">Martin Grillo</a>
-                    </div>
-                    <div class="icons">
-                        <a target="_blank" href="https://github.com/Grillinsky"><div class="hide-element">Link a GitHub</div>
-                        <i class="fab fa-github fa-2x"></i></a>
-                        <a target="_blank" href="https://www.linkedin.com/in/martin-grillo-a78927201/"><div class="hide-element">Link a LinkedIn</div>
-                        <i class="fab fa-linkedin fa-2x"></i></a>
-                    </div>
-                </section>
-                <section class="footer-emprendimiento">
-                    <h4>Merlin Construcciones</h4>
-                    <ul>
-                        <li>El Calafate, Argentina</li>
-                        <li>Cel: +54 9 11 58952800</li>
-                    </ul>
-                </section>
-</footer>
+    <footer>
+      <section class="footer-desarrollador">
+        <div>
+          Diseño y marcado por
+          <a style="color: black" href="mailto:martine.@gmail.com"
+            >Martin Grillo</a
+          >
+        </div>
+        <div class="icons">
+          <a target="_blank" href="https://github.com/Grillinsky"
+            ><div class="hide-element">Link a GitHub</div>
+            <i class="fab fa-github fa-2x"></i
+          ></a>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/martin-grillo-a78927201/"
+            ><div class="hide-element">Link a LinkedIn</div>
+            <i class="fab fa-linkedin fa-2x"></i
+          ></a>
+          <a
+            target="_blank"
+            href="https://martingrillo.netlify.app"
+            ><div class="hide-element">Link a LinkedIn</div>
+            <i class="fas fa-portrait fa-2x"></i
+          ></a>
+          <a
+            target="_blank"
+            href="https://twitter.com/martingrillo22?s=21&t=LXX4E9BHGrnKseHmhzPQmA"
+            ><div class="hide-element">Link a LinkedIn</div>
+            <i class="fab fa-twitter fa-2x"></i
+          ></a>
+          <a
+            target="_blank"
+            href="http://instagram.com/grillinski/"
+            ><div class="hide-element">Link a LinkedIn</div>
+            <i class="fab fa-instagram fa-2x"></i
+          ></a>
+        </div>
+      </section>
+      <section class="footer-emprendimiento">
+        <h4>Merlin Construcciones</h4>
+        <ul>
+          <li>El Calafate, Argentina</li>
+          <li>Cel: +54 9 11 58952800</li>
+        </ul>
+      </section>
+    </footer>
 
-
-                <script src="/main.js" type="module">
-                </script>
-</body>
-
+    <script src="/main.js" type="module"></script>
+  </body>
 </html>

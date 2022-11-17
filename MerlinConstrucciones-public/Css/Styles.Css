@@ -114,9 +114,13 @@ li{
 button{
     font-size: 1.2rem;
     text-transform: uppercase;
-    height: 2rem;
+    min-height: 2rem;
     width: 100%;
-    border: none;
+    border: 1px solid #eaf1ef;
+    background-color: #00ffff;
+}
+button:hover{
+   background-color: #01ffaf;
 }
 .button:hover{
     filter: brightness(.9);
@@ -259,7 +263,8 @@ footer section{
 }
 footer .icons{
     display: flex;
-    width: 100%;
+    margin-inline: auto;
+    width: 60%;
     justify-content: space-evenly;
 }
 
@@ -267,6 +272,7 @@ footer .icons{
 .footer-desarrollador{
     text-align: center;
 }
+
 @media (min-width: 790px) {
 
     header{
@@ -340,7 +346,7 @@ footer .icons{
         height: 50%;
     }
     form{
-        width: 60%;
+        width: 40%;
         min-height: 60vh;
     }
 
