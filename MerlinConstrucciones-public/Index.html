@@ -64,13 +64,13 @@
                 <a id="emprendimientoInstaLink" target="_blank" href="https://www.instagram.com/merlinconstrucciones/"><i class="fab fa-instagram fa-3x"></i><div class="hide-element">Link a instagram</div></a>
                 <a id="emprendimientoWhatsappLink" target="_blank" href="https://wa.link/sksgt7"><i class="fab fa-whatsapp fa-3x"></i><div class="hide-element">Link a Whatsapp</div></a>
             </div>
-            <form id="form" action="submit" netlify>
-                <div class="form-input">
+            <form name="contacto" id="form" action="submit" method="POST" netlify>
+                <p class="form-input">
                     <label for="name">Nombre:</label>
-                <input id="name" required type="text" aria-label="Name Input" placeholder="Completa con tu Nombre"></div>
+                <input id="name" name="name" required type="text" aria-label="Name Input" placeholder="Completa con tu Nombre"></p>
                 <div class="form-input">
                     <label for="telefono">Teléfono:</label>
-                <input id="phone" required aria-label="Phone number input" type="number" placeholder="Completa con tu Teléfono"></div>
+                <input name="phone" id="phone" required aria-label="Phone number input" type="number" placeholder="Completa con tu Teléfono"></div>
                 <div class="form-input">
                     <label for="select">Tipo de consulta</label>
                     <select name="select" id="select">
@@ -82,7 +82,7 @@
                 </div>
                 <div class="form-input">
                     <label for="email">Email:</label>
-                <input id="email" required aria-label="email input" type="email" placeholder="Completa con tu Email"></div>
+                <input name="email" id="email" required aria-label="email input" type="email" placeholder="Completa con tu Email"></div>
                 <label for="Comentario">Hablanos de tu proyecto:</label>
                 <textarea name="Comentario" id="message" cols="30" rows="10"></textarea>
                 <!-- <input id="submit" class="button" type="submit" value="Enviar" aria-label="Enviar" > -->
@@ -113,7 +113,7 @@
 </footer>
 
 
-                <!-- <script src="/main.js" type="module"> -->
+                <script src="/main.js" type="module">
                 </script>
 </body>
 
